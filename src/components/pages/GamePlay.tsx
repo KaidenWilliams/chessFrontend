@@ -1,7 +1,8 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 
-const GamePlay: React.FC = () => {
+interface Props {}
+
+const GamePlay = (props: Props) => {
   const { gameId } = useParams<{ gameId: string }>();
 
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 interface Game {
@@ -8,7 +7,9 @@ interface Game {
   timeControl: string;
 }
 
-const GameList: React.FC = () => {
+interface Props {}
+
+const GameList = (props: Props) => {
   const games: Game[] = [
     { id: "1", name: "Chess", players: 2, timeControl: "10+0" },
     { id: "2", name: "Go", players: 2, timeControl: "15+10" },
